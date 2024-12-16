@@ -1,0 +1,133 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .nav-links li {
+    margin-left: 15px;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+header .nav-links a:hover {
+    color: #c8e6c9;
+}
+
+/* Footer Styling */
+footer {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+/* About Page Styling */
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Features Page Styling */
+.features ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.features li {
+    margin-bottom: 10px;
+}
+
+.features .cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.features .btn {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.features .btn:hover {
+    background: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .nav-links li {
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .features .btn {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
